@@ -1,0 +1,184 @@
+*,*::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  .content {
+      display: flex;
+      justify-content: space-between;
+      padding: 2em;
+      align-items: center;
+    }
+    
+    .left {
+      flex: 1;
+      padding-right: 1em;
+      margin-left: 70px;
+      margin-top: 50px;
+    }
+    h1{
+      font-size: 5rem;
+      font-weight: bold;
+    }
+    p{
+      font-size: 2.5rem;
+      margin-top: 20px;
+    }
+  
+    .right {
+      flex: 1;
+      text-align: right;
+    }
+    
+    .right img {
+      max-width: 100%;
+      height: auto;
+      margin-right: 150px;
+      height: 450px;
+      
+    }
+    .button-left {
+      width: 228px;
+      height: 43px;
+      border: 2px solid;
+      border-radius: 50px;
+      padding: 12px 15px 12px 15px;
+      gap: 10px;
+      color: #DB2B2F;
+      font-weight: bold;
+     margin-right: 15px;
+    }
+    .button-right{
+      width: 173px;
+      height: 43px;
+      border: 2px solid;
+      border-radius: 50px;
+      padding: 12px 15px 12px 15px;
+      gap: 10px;
+      color: #DB2B2F;
+      font-weight: bold;
+      margin-left: 15px;
+    }
+    .buttons{
+      margin-top: 100px;
+    }
+    .buttons button:hover {
+      background-color: #fad8d8;
+    }
+    form{
+      
+      width: 701px;
+      
+      height: 870px;
+      padding: 25px 25px 30px 30px;
+      border-radius: 10px;
+      top: 539px;
+      left: 120px;
+      margin-left: 70px;
+      margin-bottom: 160px;
+    
+  
+    }
+    form h2 {
+      font-size: 30px;
+      font-weight: 600;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    form h3 {
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    form .input-box{
+      margin-top: 20px;
+    }
+  .box{
+    box-shadow: 0 0 10px rgb(216, 197, 197);
+    border-radius: 20PX;
+    padding: 10px;
+    width: 800px;
+    height: 870px;
+    margin-top: 30px;
+     
+    }
+    .input-box .field{
+        width: 752px;
+        height: 60px;
+        background: #e0e0e0;
+        border: #ffffff; 
+        outline: none;
+        border-radius: 14px;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+    .input-box .field.mess{
+      height: 200px;
+      padding: 1px 15px 130px 15px;
+      
+    }
+    form .button{
+      margin-top: 25px;
+    }
+    form .button-cancel{
+      width: 100px;
+      height: 43px;
+      border: 1px solid;
+      border-radius: 50px;
+      padding: 12px 15px 12px 15px;
+      gap: 10px;
+      color: #140A24;
+      cursor: pointer;
+      font-weight: bold;
+     margin-right: 15px;
+    }
+    form .button-submit{
+      width: 100px;
+      height: 43px;
+      border: 1px solid;
+      border-radius: 50px;
+      padding: 12px 15px 12px 15px;
+      gap: 10px;
+      background-color: #140A24;
+      color: #ffffff;
+      font-weight: bold;
+      cursor: pointer;
+     margin-right: 15px;
+     margin-left: 12px;
+    }
+    input::placeholder {
+      color: gray;
+      opacity: 1;  
+    }
+    .checkbox-container {
+      margin-top: 1em;
+      display: flex;
+      align-items: center;
+    }
+    .checkbox-container label {
+      margin-left: 0.5em;
+    }
+    .warning-box{
+      margin-top: 15px;
+       width: 752px;
+        height: auto;
+        background: #e0e0e0;
+        border: #ffffff;
+        outline: none;
+        border-radius: 14px;
+        padding: 15px;
+        font-size: 16px;
+        margin-top: 8px;
+        margin-left: 10px;
+    }
+    .warning-box p{
+      font-size: 12px;
+    }
+    .warning-box i {
+      margin-bottom: 1px; 
+      color: #721c24;
+    }
+   
