@@ -1,17 +1,17 @@
 import React from 'react'
-import './Home.css'
+// import './About.css'
 import Navbar from '../../components/Header/Navbar'
 import Footer from '../../components/Footer/Footer'
 
-const Home = () => {
+const About = () => {
   return (
-    <div className='home'>
+    <div className='about'>
       <Navbar />
-      <h2>Home Page</h2>
+      <h2>About Page</h2>
       <Footer />
       
     </div>
   )
 }
 
-export default Home
+export default About
