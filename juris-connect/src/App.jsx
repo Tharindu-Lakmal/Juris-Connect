@@ -21,7 +21,7 @@ import LegalVideos from "./Pages/LegalVideos/LegalVideos";
 const router = createBrowserRouter([
   {
     path: "/",
-    element:<Navbar />,
+    element:<Home />,
   },
   {
     path: "/home",
