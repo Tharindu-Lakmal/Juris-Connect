@@ -1,10 +1,15 @@
 import React from 'react'
 import './Hero.css'
+import SearchBar from '../SearchBar/SearchBar'
 
 const Hero = () => {
   return (
     <div className='hero'>
-        <h2>Hero Component</h2>
+        <div className="hero-content">
+            <h2>Empowering Sri Lankans with Legal Knowledge and Access</h2>
+
+            <SearchBar />
+        </div>
     </div>
   )
 }

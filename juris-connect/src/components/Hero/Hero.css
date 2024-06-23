@@ -1,0 +1,125 @@
+
+.hero {
+    width: 100%;
+    height: 240px;
+    background-image: url('/hero_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 3.5rem;
+    left: 1rem;
+    width: 70%;
+}
+.hero-content h2 {
+    color: #DB2B2F;
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 540px) {
+    
+    .hero {
+        width: 100%;
+        height: 280px;
+    }
+    .hero-content {
+        top: 4rem;
+        left: 2rem;
+        max-width: 65%;
+    }
+    .hero-content h2 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 2.5rem;
+        margin-bottom: 28px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .hero {
+        width: 100%;
+        height: 280px;
+    }
+    .hero-content {
+        top: 4rem;
+        left: 3rem;
+        max-width: 50%;
+    }
+    .hero-content h2 {
+        font-size: 32px;
+        letter-spacing: 1px;
+        line-height: 2.5rem;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .hero {
+        width: 100%;
+        height: 360px;
+    }
+    .hero-content {
+        top: 5.5rem;
+        left: 4rem;
+        max-width: 50%;
+    }
+    .hero-content h2 {
+        font-size: 38px;
+        letter-spacing: 2px;
+        line-height: 3rem;
+        margin-bottom: 34px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .hero {
+        width: 100%;
+        height: 420px;
+        margin: 0 auto;
+    }
+    
+    .hero-content {
+        top: 6rem;
+        left: 5rem;
+        max-width: 55%;
+    }
+    .hero-content h2 {
+        font-size: 48px;
+        line-height: 3.8rem;
+        letter-spacing: 4px;
+        font-weight: 500;
+        margin-bottom: 34px;
+    }
+}
+
+
+@media only screen and (min-width: 1480px) {
+    .hero {
+        max-width: 1680px;
+        height: 420px;
+        margin: 0 auto;
+    }
+    .hero-content {
+        top: 6rem;
+        left: 5rem;
+        max-width: 50%;
+    }
+    .hero-content h2 {
+        font-size: 52px;
+        line-height: 4rem;
+        letter-spacing: 4px;
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,93 @@
+
+.pagecards {
+    width: 90%;
+    margin: 30px auto;
+}
+
+.heading-text {
+    font-size: 18px;
+    color: #272727;
+    margin: 8px 0 15px 0;
+}
+
+.pagecard-img img {
+    width: 100%;
+    transition: ease-in-out 0.3s;
+}
+
+.pagecard-img img:is(:hover, :focus-visible) {
+    scale: 0.98;
+}
+
+
+.pagecard-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    margin-top: 30px;
+    gap: 50px;
+    row-gap: 18px;
+}
+
+.pagecard .card-text {
+    font-weight: 500;
+    color: #272727;
+    font-size: 18px;
+    opacity: 1;
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 640px) {
+    .pagecards {
+        width: 80%;
+        margin: 40px auto;
+    }
+    
+    
+    .pagecard-content {
+        grid-template-columns: repeat(auto-fill,minmax(250px,2fr));
+        margin-top: 30px;
+        gap: 40px;
+        row-gap: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .pagecards {
+        margin: 80px auto;
+    }
+    
+    
+    .pagecard-content {
+        grid-template-columns: repeat(auto-fill,minmax(240px,3fr));
+        margin-top: 30px;
+        gap: 50px;
+        row-gap: 18px;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    
+    .container {
+        max-width: 1680px;
+    }
+    .pagecards {
+        width: 80%;
+        max-width: 1680px;
+        margin: 80px auto 0;
+    }
+
+    .pagecard-content {
+        grid-template-columns: repeat(auto-fill,minmax(290px,3fr));
+        margin-top: 30px;
+        gap: 30px;
+        row-gap: 18px;
+    }
+
+    .pagecard-img img {
+        width: 100%;
+    }
+}

@@ -1,8 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './SearchBar.css'
 
-function SearchBar() {
+const SearchBar = () => {
+
+    const [search, setsearch] = useState("");
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        console.log(search);
+    }
+
   return (
-    <div>SearchBar</div>
+    <div className='searchbar'>
+        <form onSubmit={handleSubmit}>
+            <input type="text" value={search} onChange={() => setsearch(event.target.value)} placeholder='Seacrch here...' required />
+
+            <button className='search-btn' type='submit'>
+                <img src="/search.png" alt="" />
+            </button>
+        </form>
+    </div>
   )
 }
 
