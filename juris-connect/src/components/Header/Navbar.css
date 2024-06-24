@@ -14,9 +14,13 @@ li {
 }
 .nav a {
     text-decoration: none;
-    color: #DB2B2F;
+    color: #f5f0f0;
     font-weight: bold;
     
+}
+
+.nav li :hover {
+    color: #DB2B2F;
 }
 .nav {
     display: flex;
@@ -26,10 +30,13 @@ li {
     background: #140A24;
 }
 .nav_brand span {
-    color: aliceblue;
+    color: #DB2B2F;
+    font-weight: bold;
 }
 .nav_brand {
     text-transform: none;
+    color: aliceblue;
+    font-weight: bold;
 
     
     
@@ -77,8 +84,16 @@ li {
     width: 81px;
     gap: 10px;
     font-weight: bold;
+    border: 2px solid;
+    border-color: #DB2B2F;
+
+
+
+    
 
 }
+
+
 .nav_active {
     transform: translateX(0);  
 }
