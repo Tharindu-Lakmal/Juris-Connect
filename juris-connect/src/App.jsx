@@ -15,6 +15,7 @@ import Lawyers from "./Pages/Lawyers/Lawyers";
 import LegalEducation from "./Pages/LegalEducation/LegalEducation";
 import LegalQuestion from "./Pages/LegalQuestion/LegalQuestion";
 import LegalVideos from "./Pages/LegalVideos/LegalVideos";
+import LawyerProfile from "./Pages/LawyerProfile/LawyerProfile";
 
 
 
@@ -74,7 +75,12 @@ const router = createBrowserRouter([
   {
     path: "/legalvideos",
     element:<LegalVideos />,
+  },
+  {
+    path: "/lawyerprofile",
+    element:<LawyerProfile />,
   }
+
 
 ]);
 function App() {

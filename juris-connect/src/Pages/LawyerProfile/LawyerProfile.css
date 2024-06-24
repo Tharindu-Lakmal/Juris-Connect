@@ -1,0 +1,46 @@
+.profile-container {
+    text-align: center;
+    background-color: #002c4c;
+    color: white;
+    padding: 50px 20px;
+}
+
+.profile-header {
+    position: relative;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-header h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.profile-header .verified {
+    color: #00bfff;
+}
+
+.profile-consulting-options {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.option {
+    text-align: center;
+    flex: 1;
+}
+
+.option i {
+    font-size: 24px;
+}
+
+.option p {
+    margin-top: 10px;
+    font-size: 16px;
+}

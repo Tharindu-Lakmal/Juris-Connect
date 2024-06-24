@@ -17,7 +17,7 @@
       margin-top: 50px;
       
 }
-h1{
+.left h1{
       font-size: 5rem;
       font-weight: bold;
       width: 700px;
@@ -65,6 +65,12 @@ h1{
     }
     .buttons{
       margin-top: 100px;
+      /* font-size: 15px; */
+      
+    }
+    .buttons a {
+      text-align: center;
+      padding-top: 0px;
     }
     .buttons button:hover {
       background-color: #fad8d8;
@@ -97,6 +103,12 @@ h1{
     }
     form .input-box{
       margin-top: 20px;
+      font-size: 10px;
+    }
+    .input-box label{
+
+       font-size: 15px;
+       
     }
   .box{
     box-shadow: 0 0 10px rgb(216, 197, 197);
