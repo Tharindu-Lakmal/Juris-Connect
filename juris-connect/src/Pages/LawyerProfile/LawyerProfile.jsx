@@ -6,6 +6,9 @@ import Footer from '../../components/Footer/Footer';
 import Navbar from '../../components/Header/Navbar';
 import img1 from "../../assets/lawyer_pic.jpg";
 import img2 from "../../assets/law_page_back.jpg";
+import { NavLink, Outlet } from 'react-router-dom';
+
+
 
 
 
@@ -43,6 +46,22 @@ function LawyerProfile() {
                 </div>
             </div>
         </div>
+        <div>
+            <div className='title'>
+                <h2>Empowering Sri Lankans with Legal Knowledge and Access</h2>
+                <p>Easily remove the background from images in Adobe Express, your all-in-one AI content creation app.</p>
+
+            </div>
+        <div className="profile-details-navigation">
+                <NavLink to="LawyerDetails" className="nav-link" activeClassName="active-nav-link">Lawyer Details</NavLink>
+                <NavLink to="BookAppointment" className="nav-link" activeClassName="active-nav-link">Book Appointment</NavLink>
+                <NavLink to="ReviewsRatings" className="nav-link" activeClassName="active-nav-link">Reviews & Ratings</NavLink>
+        </div>
+            <div className="profile-details-content">
+                <Outlet />
+            </div>
+        </div>
+        
         <Footer />
         </div>
     );
