@@ -11,6 +11,7 @@ import About from '../../components/About/About'
 
 const Home = () => {
   return (
+    
     <div className='home'>
       <Navbar />
       <Hero />
