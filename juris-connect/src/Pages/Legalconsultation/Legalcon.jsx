@@ -16,7 +16,7 @@ export default function Legalcon(){
 
            <div className='buttons'>
              <button className='button-left'>Ask your legal question</button>
-             <button className='button-right'><a href="LawyerProfile"> Free legal advice </a> </button>
+             <button className='button-right'><a href="#"> Free legal advice </a> </button>
            </div>
         </div>
           <div className="right">

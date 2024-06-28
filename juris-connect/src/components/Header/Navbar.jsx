@@ -16,7 +16,7 @@ function Navbar() {
             <div className="nav_brand">Juri<span>Connect</span></div>
             <ul className={active}>
                 <li className="nav_item"><a href="/Home" className="nav_link">Home</a></li>
-                <li className="nav_item"><a href="/Legalcon" className="nav_link">Community Forum</a></li>
+                <li className="nav_item"><a href="/#" className="nav_link">Community Forum</a></li>
                 <li className="nav_item"><a href="/About" className="nav_link">About Us</a></li>
             </ul>
             <button className="login_btn">Login</button>
