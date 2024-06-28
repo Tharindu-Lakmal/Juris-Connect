@@ -64,3 +64,9 @@ label, input, select {
   color: #272727;
   opacity: 0.3;
 }
+.active {
+  background-color: #a7a7a7;
+  color: #fff;
+  display: inline-block;
+  /* font-weight: bold;  */
+}
