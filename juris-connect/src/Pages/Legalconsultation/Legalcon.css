@@ -75,7 +75,7 @@
     .buttons button:hover {
       background-color: #fad8d8;
     }
-    form{
+    .section-legalcon form{
       
       width: 701px;
       
@@ -89,19 +89,19 @@
     
   
     }
-    form h2 {
+    .section-legalcon form h2 {
       font-size: 30px;
       font-weight: 600;
       margin-top: 15px;
       font-weight: bold;
     }
-    form h3 {
+    .section-legalcon form h3 {
       font-size: 16px;
       font-weight: 400;
       margin-top: 10px;
       margin-bottom: 10px;
     }
-    form .input-box{
+    .section-legalcon form .input-box{
       margin-top: 20px;
       font-size: 10px;
     }
@@ -136,10 +136,10 @@
       padding: 1px 15px 130px 15px;
       
     }
-    form .button{
+    .section-legalcon .button{
       margin-top: 25px;
     }
-    form .button-cancel{
+    .section-legalcon .button-cancel{
       width: 100px;
       height: 43px;
       border: 1px solid;
@@ -151,7 +151,7 @@
       font-weight: bold;
      margin-right: 15px;
     }
-    form .button-submit{
+    .section-legalcon .button-submit{
       width: 100px;
       height: 43px;
       border: 1px solid;
@@ -165,7 +165,7 @@
      margin-right: 15px;
      margin-left: 12px;
     }
-    input::placeholder {
+    .section-legalcon input::placeholder {
       color: gray;
       opacity: 1;  
     }
