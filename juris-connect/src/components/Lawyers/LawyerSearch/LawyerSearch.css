@@ -1,0 +1,137 @@
+
+
+.lawyersearch {
+    width: 100%;
+    background-color: #140A24;
+    margin-top: 40px;
+    padding: 40px 0;
+}
+
+.lawyersearch-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lawyersearch-content h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 26px;
+}
+
+.lawyersearch-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lawyersearch-form label {
+    color: #bababa;
+    font-size: 14px;
+}
+
+.lawyersearch-form input, select {
+    display: flex;
+    width: 100%;
+    height: 48px;
+    border: none;
+    border-radius: 40px;
+    padding-inline: 20px;
+    margin-top: 6px;
+    background-color: white;
+    outline: none;
+}
+
+.lawyersearch-form select option {
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+}
+
+.lawyersearch-subject {
+    appearance: none;
+    background-image: url('/down_arrow.png');
+    background-repeat: no-repeat;
+    background-position: right 0.4rem top 0.5rem;
+}
+
+.lawyersearch-btn {
+    padding: 16px 14px;
+    background-color: #db2b2ed1;
+    border: none;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease-in-out 0.3s;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.lawyersearch-btn:is(:hover, :focus-visible) {
+    background-color: #db2b2e;
+}
+.lawyersearch-btn img {
+    width: 20px;
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 540px) {
+    .lawyersearch-container {
+        width: 80%;
+    }
+
+    .lawyersearch-form input, select {
+        width: 70%;
+    }
+
+    .lawyersearch-btn {
+        width: 70%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .lawyersearch {
+        margin-top: 60px;
+        padding: 60px 0;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .lawyersearch {
+        margin-top: 60px;
+        padding: 80px 0;
+    }
+
+    .lawyersearch-form {
+        max-width: 870px;
+    }
+
+    .lawyersearch-form form {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .lawyersearch-form input {
+        width: 480px;
+    }
+
+    .lawyersearch-form select {
+        width: 230px;
+    }
+
+    .lawyersearch-btn {
+        width: 80px;
+    }
+}
+
+@media only screen and (min-width: 1480px) {
+    .lawyersearch {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+}
