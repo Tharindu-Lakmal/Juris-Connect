@@ -83,7 +83,7 @@ const LawyerCard = () => {
                       </div>
 
                       <div className="lawyercard-btn">
-                        <button>More details</button>
+                        <button> <a href="LawyerProfile">More details</a></button>
                       </div>
                     </div>
                   )

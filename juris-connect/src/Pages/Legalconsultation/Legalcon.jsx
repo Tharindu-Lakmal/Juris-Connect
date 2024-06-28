@@ -13,14 +13,15 @@ export default function Legalcon(){
         <div className="left">
           <h1>Get the legal help <br/> you need</h1>
           <p>Every problem is unique, and we offer personalized <br />recomendations to suit your specific needs</p>
-          <div className='buttons'>
-          <button className='button-left'>Ask your legal question</button>
-          <button className='button-right'><a href="LawyerProfile"> Free legal advice </a> </button>
+
+           <div className='buttons'>
+             <button className='button-left'>Ask your legal question</button>
+             <button className='button-right'><a href="#"> Free legal advice </a> </button>
+           </div>
+        </div>
+          <div className="right">
+             <img src={img1} alt="Description" />
           </div>
-        </div>
-        <div className="right">
-          <img src={img1} alt="Description" />
-        </div>
       </div>
       <section className='section-legalcon'>
         <form>
@@ -56,7 +57,7 @@ export default function Legalcon(){
                    <input type="checkbox" id="agree" name="agree" />
                    <label htmlFor="agree">I have read the notice and i hold the responsibility for the details provided here.</label>
               </div>
-               <div className='button'>
+               <div className='buttons'>
                <button className='button-submit'>Submit</button>
                <button className='button-cancel'>Cancel</button>
               </div>
