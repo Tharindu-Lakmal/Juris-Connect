@@ -22,7 +22,7 @@ export default function Legalcon(){
           <img src={img1} alt="Description" />
         </div>
       </div>
-      <section>
+      <section className='section-legalcon'>
         <form>
           <h2> Describe your situation</h2>
           <h3>Ready to submit your question? Here's what we need from you</h3>
