@@ -47,7 +47,7 @@ const PageCard = () => {
                     </div>
                 </Link>
 
-                <Link to='/legal_questions'>
+                <Link to='/legalquestion'>
                     <div className="pagecard">
                         <div className="pagecard-img">
                             <img src={assets.legal_questions} alt="" />
