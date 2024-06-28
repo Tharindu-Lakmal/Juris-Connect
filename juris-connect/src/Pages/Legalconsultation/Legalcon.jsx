@@ -1,7 +1,7 @@
 import Navbar from '../../components/Header/Navbar'
 import "./Legalcon.css"
 import img1 from "../../assets/Legalcon.jpeg"
-// import '@fortawesome/fontawesome-free/css/all.min.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Footer from '../../components/Footer/Footer';
 
 

@@ -16,6 +16,9 @@ import LegalEducation from "./Pages/LegalEducation/LegalEducation";
 import LegalQuestion from "./Pages/LegalQuestion/LegalQuestion";
 import LegalVideos from "./Pages/LegalVideos/LegalVideos";
 import LawyerProfile from "./Pages/LawyerProfile/LawyerProfile";
+import LawyerDetails from "./Pages/LawyerDetails/LawyerDetails";
+import BookAppointment from "./Pages/BookingAppointment/BookingAppointment";
+import ReviewsRatings from "./Pages/ReviewsRating/ReviewsRating";
 
 
 
@@ -79,7 +82,22 @@ const router = createBrowserRouter([
   {
     path: "/lawyerprofile",
     element:<LawyerProfile />,
-  }
+    children: [
+      {
+        path: "lawyerdetails",
+        element: <LawyerDetails />,
+      },
+      {
+        path: "bookappointment",
+        element: <BookAppointment />,
+      },
+      {
+        path: "reviewsratings",
+        element: <ReviewsRatings />,
+      },
+    
+     ],
+  },
 
 
 ]);
