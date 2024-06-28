@@ -32,7 +32,7 @@ import search from './search.png'
 import down_arrow from './down_arrow.png'
 import verified from './verified.png'
 import lady_justice from './lady_justice.mp4'
-
+import legalquestionimg1 from './legalquestionimg1.png'
 
 export const assets = {
     legal_consultaion,
@@ -53,6 +53,7 @@ export const assets = {
     down_arrow,
     verified,
     lady_justice,
+    legalquestionimg1,
 }
 
 
