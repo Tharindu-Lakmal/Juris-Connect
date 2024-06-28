@@ -12,13 +12,15 @@ const SearchBar = () => {
 
   return (
     <div className='searchbar'>
-        <form onSubmit={handleSubmit}>
-            <input type="text" value={search} onChange={() => setsearch(event.target.value)} placeholder='Seacrch here...' required />
+        <div className="searchbar-container">
+            <form onSubmit={handleSubmit}>
+                <input type="text" value={search} onChange={() => setsearch(event.target.value)} placeholder='Seacrch here...' required />
 
-            <button className='search-btn' type='submit'>
-                <img src="/search.png" alt="" />
-            </button>
-        </form>
+                <button className='search-btn' type='submit'>
+                    <img src="/search.png" alt="" />
+                </button>
+            </form>
+        </div>
     </div>
   )
 }
