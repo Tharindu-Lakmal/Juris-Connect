@@ -48,21 +48,39 @@
     display: flex;
     justify-content: space-around;
     margin-top: -50px;
+    padding-bottom: 20px;
+    
     
 }
 
 .option {
-    text-align: center;
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    padding: 5px;
+    border: none;
+    background-color: #002c4c;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.option:hover {
+    background-color: #002c4c;
+    opacity: 40%;
+    transform: translateY(-2px);
 }
 
 .option i {
     font-size: 24px;
+    color: white;
 }
 
 .option p {
     margin-top: 10px;
     font-size: 16px;
+    color: white;
 }
 .title{
     padding-left: 122px;
