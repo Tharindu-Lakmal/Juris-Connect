@@ -7,7 +7,7 @@ import Footer from '../../components/Footer/Footer';
 
 export default function Legalcon(){
     return(
-    <div>
+    <div className='legalcon'>
       <Navbar />
       <div className="content">
         <div className="left">

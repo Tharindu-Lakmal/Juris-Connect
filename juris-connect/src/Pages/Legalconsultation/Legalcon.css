@@ -75,7 +75,7 @@
     .buttons button:hover {
       background-color: #fad8d8;
     }
-    .section-legalcon form{
+    .legalcon .section-legalcon form{
       
       width: 701px;
       
@@ -89,19 +89,19 @@
     
   
     }
-    .section-legalcon form h2 {
+    .legalcon form h2 {
       font-size: 30px;
       font-weight: 600;
       margin-top: 15px;
       font-weight: bold;
     }
-    .section-legalcon form h3 {
+    .legalcon form h3 {
       font-size: 16px;
       font-weight: 400;
       margin-top: 10px;
       margin-bottom: 10px;
     }
-    .section-legalcon form .input-box{
+    .legalcon .input-box{
       margin-top: 20px;
       font-size: 10px;
     }
