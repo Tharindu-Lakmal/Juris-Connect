@@ -23,14 +23,20 @@ informed answers, all while protecting your privacy.</p>
       </div>
       </div>
     </div>
+
     <section>
       <form>
+        <div className='headerpart'>
          <div className="heading">
           <h2>Recent blog posts</h2>
          </div>
          <div className='button'>
           <button className='ask-question'><a href="legal_consultaion"></a>Ask a question</button>
          </div>
+        </div>
+        <div>
+         
+        </div>
       </form>
     </section>
     <Footer />
