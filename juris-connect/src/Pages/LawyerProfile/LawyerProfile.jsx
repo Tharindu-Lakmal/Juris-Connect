@@ -28,39 +28,39 @@ function LawyerProfile() {
         
             
             <div className="profile-consulting-options">
-                <div className="option">
+                <button className="option">
                     <i className="fas fa-phone"></i>
                     <p>Phone Consulting</p>
-                </div>
-                <div className="option">
+                </button>
+                <button className="option">
                     <i className="fas fa-comments"></i>
                     <p>Online Messaging</p>
-                </div>
-                <div className="option">
+                </button>
+                <button className="option">
                     <i className="fas fa-envelope"></i>
                     <p>Email Consulting</p>
-                </div>
-                <div className="option">
+                </button>
+                <button className="option">
                     <i className="fas fa-video"></i>
                     <p>Video Consulting</p>
+                </button>
+            </div>
+        </div>
+            <div>
+                <div className='title'>
+                    <h2>Empowering Sri Lankans with Legal Knowledge and Access</h2>
+                    <p>Easily remove the background from images in Adobe Express, your all-in-one AI content creation app.</p>
+
+                </div>
+                <div className="profile-details-navigation">
+                    <NavLink to="LawyerDetails" className="nav-link" activeClassName="active-nav-link">Lawyer Details</NavLink>
+                    <NavLink to="BookAppointment" className="nav-link" activeClassName="active-nav-link">Book Appointment</NavLink>
+                    <NavLink to="ReviewsRatings" className="nav-link" activeClassName="active-nav-link">Reviews & Ratings</NavLink>
+                </div>
+                <div className="profile-details-content">
+                    <Outlet />
                 </div>
             </div>
-        </div>
-        <div>
-            <div className='title'>
-                <h2>Empowering Sri Lankans with Legal Knowledge and Access</h2>
-                <p>Easily remove the background from images in Adobe Express, your all-in-one AI content creation app.</p>
-
-            </div>
-        <div className="profile-details-navigation">
-                <NavLink to="LawyerDetails" className="nav-link" activeClassName="active-nav-link">Lawyer Details</NavLink>
-                <NavLink to="BookAppointment" className="nav-link" activeClassName="active-nav-link">Book Appointment</NavLink>
-                <NavLink to="ReviewsRatings" className="nav-link" activeClassName="active-nav-link">Reviews & Ratings</NavLink>
-        </div>
-            <div className="profile-details-content">
-                <Outlet />
-            </div>
-        </div>
         
         <Footer />
         </div>
