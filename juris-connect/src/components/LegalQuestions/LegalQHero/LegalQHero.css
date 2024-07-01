@@ -1,0 +1,90 @@
+
+
+.legalqhero-container {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.legalqhero-content {
+    position: relative;
+    margin: 10px 0;
+}
+
+.legalqhero-content h1 {
+    color: #140A24;
+    margin-bottom: 14px;
+}
+
+.legalqhero-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto 0;
+}
+.legalqhero-img img {
+    width: 100%;
+}
+
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 540px) {
+    .legalqhero-container {
+        width: 80%;
+    }
+    
+    .legalqhero-img img {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    .legalqhero-container {
+        width: 80%;
+    }
+
+    .legalhero-img img {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) {
+    .legalqhero-container {
+        width: 80%;
+        flex-direction: row;
+        gap: 30px;
+        margin: 20px auto 40px;
+        align-items: center;
+    }
+
+    .legalqhero-content {
+        width: 40%;
+    }
+
+    .legalqhero-content h1 {
+        font-size: 54px;
+    }
+    
+    .legalqhero-img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .legalqhero-img img {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 1480px) {
+    .legalqhero {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+}
