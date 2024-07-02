@@ -24,7 +24,19 @@ const LegalQHero = () => {
                 <img src={assets.legalquestionimg1} alt="" />
             </div>
 
+         
+
         </div>
+        <div className="legalqcard-topic-content">
+                  <div className='legalqcard-topic-heading'>
+                  <h2>
+                      Recent blog posts
+                  </h2>
+                  </div>
+                  <div>
+                  <button className="question-btn"> <a href="Legalcon">Ask a question</a></button>
+                  </div>
+              </div>
     </div>
   )
 }

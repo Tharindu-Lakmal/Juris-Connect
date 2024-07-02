@@ -29,6 +29,10 @@
     width: 100%;
 }
 
+.legalqcard-topic-heading {
+    width: 80%;
+    margin: 0 auto;
+}
 
 
 /* Responsive Styles */
@@ -87,4 +91,11 @@
         max-width: 1680px;
         margin: 0 auto;
     }
+}
+
+.legalqcard-topic-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+    ;
 }

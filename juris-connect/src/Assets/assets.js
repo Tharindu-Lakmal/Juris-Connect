@@ -587,3 +587,36 @@ export const lawyers_details = [
         }
     },
 ]
+
+export const qcard_details = [
+    {
+        topic:'Property Registration in parents name in divorce settlement',
+        date: '2024.05.16',
+        specification:'family',
+        description:'What is the process to apply for divorce settlement, what if he has all his properties registration done in parents name?',
+        lawer_image:lawyer_1,
+        lawyer_name:'Mr.Kamalsiri Perera',
+        answer: 'The brother / sister legally speaking the wife can not claim any divorce settlement from the properties of the parents of the husband.',
+
+    },
+    {
+        topic:'Property Registration in parents name in divorce settlement',
+        date: '2024.05.16',
+        specification:'family',
+        description:'What is the process to apply for divorce settlement, what if he has all his properties registration done in parents name?',
+        lawer_image:lawyer_1,
+        lawyer_name:'Mr.Kamalsiri Perera',
+        answer: 'The brother / sister legally speaking the wife can not claim any divorce settlement from the properties of the parents of the husband.',
+
+    },
+    {
+        topic:'Property Registration in parents name in divorce settlement',
+        date: '2024.05.16',
+        specification:'family',
+        description:'What is the process to apply for divorce settlement, what if he has all his properties registration done in parents name?',
+        lawer_image:lawyer_1,
+        lawyer_name:'Mr.Kamalsiri Perera',
+        answer: 'The brother / sister legally speaking the wife can not claim any divorce settlement from the properties of the parents of the husband.',
+
+    },
+]
