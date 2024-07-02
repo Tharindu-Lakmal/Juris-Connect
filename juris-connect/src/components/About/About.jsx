@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 const About = () => {
   return (
     <div className='about'>
-        <div className="container">
+        <div className="about-main-container">
 
             <div className="about-container">
                 <div className="about-img">

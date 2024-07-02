@@ -1,5 +1,5 @@
 
-.container {
+.about-main-container {
     width: 90%;
     margin: 40px auto 0;
     display: flex;
@@ -44,7 +44,7 @@
 
 
 @media only screen and (min-width: 768px) {
-    .container {
+    .about-main-container {
         width: 80%;
         margin-top: 60px;
         gap: 60px;
@@ -80,7 +80,7 @@
 
 
 @media only screen and (min-width: 1024px) {
-    .container {
+    .about-main-container {
         width: 80%;
         margin-top: 100px;
         gap: 100px;
@@ -120,11 +120,11 @@
 
 @media only screen and (min-width: 1480px) {
     .about {
-        max-width: 1680px;
+        max-width: 1920px;
         margin: 0 auto;
     }
 
-    .container {
+    .about-main-container {
         width: 80%;
     }
 }
