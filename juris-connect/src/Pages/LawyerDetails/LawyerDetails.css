@@ -1,0 +1,42 @@
+.profile-main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: flex-start;
+    
+    color: #201f1f; 
+    padding: 20px;
+}
+
+.profile-details {
+    flex: 1;
+    padding-right: 20px;
+    
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.profile-col {
+    flex: 1;
+    padding: 10px;
+    
+}
+.profile-col p:nth-child(2) {
+    margin-top: 20px; /* Increase margin specifically for the second paragraph (Experience) */
+}
+
+.profile-video {
+    flex: 0 0 400px; 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.profile-video img {
+    max-width: 100%;
+    border-radius: 10px;
+}
