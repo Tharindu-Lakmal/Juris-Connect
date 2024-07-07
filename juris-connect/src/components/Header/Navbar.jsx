@@ -1,37 +1,66 @@
-import React, {useState} from "react";
-import "./Navbar.css";
+import React, { useState } from 'react'
+import './Navbar.css'
+import { Link } from 'react-router-dom'
 
-function Navbar() {
-    const [active, setActive] = useState("nav_menu");
-    const [toggleIcon, setToggleIcon] = useState("nav_toggler");
+const NavBar = ({setLogin}) => {
 
-    const navToggle = () => {
-        active === 'nav_menu' ? setActive('nav_menu nav_active') : setActive('nav_menu');
+    const [isOpen, setIsOpen] = useState(false);
 
-        toggleIcon === "nav_toggler" ? setToggleIcon("nav_toggler toggle") : setToggleIcon("nav_toggler");
-    };
+    const NavActive = () => {
+        setIsOpen(!isOpen);
+    }
 
-    return (
-        <nav className="nav">
-            <div className="nav_brand">Juri<span>Connect</span></div>
-            <ul className={active}>
-                <li className="nav_item"><a href="/Home" className="nav_link">Home</a></li>
-                <li className="nav_item"><a href="/#" className="nav_link">Community Forum</a></li>
-                <li className="nav_item"><a href="/About" className="nav_link">About Us</a></li>
-            </ul>
-            <button className="login_btn">Login</button>
+
+  return (
+    <div className='navbar'>
+        <div className="navbarcontainer">
+
+            <div className="navbar-header">
+                <div className="logo">
+                    <Link to='/'>
+                        <img className='logo' src="/JurisConnect_logo.png" alt="" />
+                    </Link>
+                </div>
             
-            <div onClick = {navToggle} className={toggleIcon}>
-                    <div className="line1"></div>
-                    <div className="line2"></div>
-                    <div className="line3"></div>
-            
+
+                <nav className={isOpen?"navbar-ul-link active":"navbar-ul-link"}>
+                    <div className="navbar-ul-top">
+                        <Link to='/'>
+                            <img className='logo' src="/JurisConnect_logo.png" alt="" />
+                        </Link>
+
+                        {/* close icon "X" */}
+                        <div className="navbar-menu" onClick={NavActive}>
+                            <img src="/close_icon.png" alt="" />
+                        </div>
+                    </div>
+                    <div className="navbar-ul-list">
+                        <ul>
+                            <li className='navbar-link'><a href="#">Home</a></li>
+                            <li className='navbar-link'><a href="#">Community Forum</a></li>
+                            <li className='navbar-link'><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+
+                    {/* sign in btn */}
+                    <div className="navbar-btn">
+                        <button onClick={()=>setLogin(true)} className="login">Log in</button>
+                        <button className="signup">Sign up</button>
+                    </div>
+                </nav>
+
+                {/* hambager menu icon */}
+                <button className="navbar-menu" onClick={NavActive}>
+                    <img src="/menus_icon.png" alt="" />
+                </button>
+
+                <div className={isOpen?"overlay active":"overlay"} data-overlay data-nav-toggler></div>
+
             </div>
-            
-            
-        </nav>
-    );
-    
+
+        </div>
+    </div>
+  )
 }
 
-export default Navbar;
+export default NavBar
