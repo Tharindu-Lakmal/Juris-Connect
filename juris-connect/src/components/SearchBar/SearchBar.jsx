@@ -17,9 +17,10 @@ const SearchBar = () => {
                 <input type="text" value={search} onChange={() => setsearch(event.target.value)} placeholder='Seacrch here...' required />
 
                 <button className='search-btn' type='submit'>
-                    <img src="/search.png" alt="" />
+                    Explore
                 </button>
             </form>
+            <p>Find lawyers</p>
         </div>
     </div>
   )

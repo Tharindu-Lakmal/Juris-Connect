@@ -18,9 +18,19 @@ body {
   background-color: #fafafa;
 }
 
+button:is(:hover, :focus-visible) {
+  background-color: hsl(228, 99%, 58%, 0.9);
+}
+
 a {
   text-decoration: none;
   color: inherit;
+}
+
+ul li {
+  list-style: none;
+  font-weight: 500;
+  list-style: none;
 }
 
 h1 {

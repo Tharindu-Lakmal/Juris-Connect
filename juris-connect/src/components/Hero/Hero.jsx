@@ -6,18 +6,24 @@ import lady_justice from '../../assets/lady_justice.mp4'
 const Hero = () => {
   return (
     <div className='hero'>
-        
-      <video src={lady_justice} autoPlay loop muted />
       
-      <div className="hero-content">
-        <div className="content">
-          <SearchBar />
-          <h1>
-            Empowering Sri Lankans with Legal Knowledge and Access
-          </h1>
-        </div>
-      </div>
+        <div className="hero-content">
+          
+          <div className="content">
+            <h1>
+              Sri Lankans with Legal Knowledge and Access
+            </h1>
+            <p>
+              In applications with many components, it’s very important 
+              to free up resources taken by the components when they are 
+              destroyed.
+            </p>
+            <div className="hero-search">
+              <SearchBar />
+            </div>
+          </div>
 
+        </div>
     </div>
   )
 }
