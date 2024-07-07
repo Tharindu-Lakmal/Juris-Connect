@@ -1,7 +1,6 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "server.js",
   "main": "server.js",
   "type": "module",
   "scripts": {
@@ -9,6 +8,7 @@
   },
   "author": "",
   "license": "ISC",
+  "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
