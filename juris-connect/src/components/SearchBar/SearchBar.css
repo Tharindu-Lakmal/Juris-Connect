@@ -1,137 +1,99 @@
 
 .searchbar {
-    width: 360px;
+    width: 100%;
     margin: 0 auto;
+}
+
+.searchbar-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: start;
 }
 
 .searchbar form {
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    gap: 18px;
 }
 
 .searchbar input {
-    height: 42px;
-    width: 70%;
-    border: none;
-    background-color: hsla(0, 0%, 100%, 0.1);
-    border-radius: 40px 0 0 40px;
+    height: 48px;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255, 0.4);
+    background-color: hsla(0, 0%, 100%, 0.05);
+    border-radius: 8px;
     padding-left: 20px;
     outline: none;
-    caret-color: white;
     color: white;
 }
 .searchbar input::placeholder {
     font-size: 14px;
-    color: hsla(0, 0%, 100%, 0.6);
+    color: rgb(255, 255, 255, 1);
     opacity: 0.8;
 }
 
 .search-btn {
-    height: 42px;
-    width: 50px;
-    padding: 7px 14px;
-    background-color: hsla(0, 0%, 100%, 0.1);
+    height: 48px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
+    background-color: rgb(44, 86, 254);
     border: none;
-    border-left: 1px solid hsla(0, 0%, 100%, 0.6);
-    border-radius: 0 40px 40px 0;
-    display: flex;
-    align-items: center;
+    border-radius: 8px;
+    text-align: center;
     transition: ease-in-out 0.3s;
 }
 
 .search-btn:is(:hover, :focus-visible) {
-    background-color: hsla(0, 0%, 100%, 0.3);
-    border-left: 1px solid hsla(0, 0%, 100%, 0.2);
+    background-color: hsl(228, 99%, 58%, 0.9);
 }
 
-.search-btn img {
-    width: 16px;
-    margin: auto;
+.searchbar .searchbar-container p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 6px;
 }
 
 
 /* Responsive Styles */
 
-@media only screen and (min-width: 540px) {
-    
-    .searchbar {
-        width: 80%;
-        margin: 0 auto;
-    }
-
-    .searchbar input {
-        width: 80%;
-    }
-
-    .searchbar input::placeholder {
-        font-size: 14px;
-    }
-    
-    .search-btn {
-        width: 60px;
-    }
-    
-}
-
 @media only screen and (min-width: 768px) {
     .searchbar {
-        width: 60%;
+        width: 100%;
+        max-width: 920px;
         margin: 0 auto;
+    }
+
+    .searchbar form {
+        flex-direction: row;
     }
 
     .searchbar input {
         width: 75%;
     }
-
-    .searchbar input::placeholder {
-        font-size: 14px;
-    }
     
     .search-btn {
-        width: 50px;
-    }
-
-    .search-btn img {
-        width: 16px;
+        width: 25%;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .searchbar {
-        width: 60%;
+        max-width: 920px;
         margin: 0 auto;
     }
-    
+
+    .searchbar form {
+        flex-direction: row;
+    }
+
     .searchbar input {
         width: 75%;
     }
-    .searchbar input::placeholder {
-        font-size: 14px;
-    }
     
     .search-btn {
-        width: 50px;
-    }
-    .search-btn img {
-        width: 16px;
-    }
-}
-
-
-@media only screen and (min-width: 1280px) {
-    .searchbar input {
-        width: 75%;
-    }
-    .searchbar input::placeholder {
-        font-size: 14px;
-    }
-    
-    .search-btn {
-        width: 50px;
-    }
-    .search-btn img {
-        width: 16px;
+        width: 25%;
     }
 }

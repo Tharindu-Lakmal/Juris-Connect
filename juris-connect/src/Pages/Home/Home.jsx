@@ -13,7 +13,6 @@ const Home = () => {
   return (
     
     <div className='home'>
-      <Navbar />
       <Hero />
       <PageCard />
       <SubHeader />

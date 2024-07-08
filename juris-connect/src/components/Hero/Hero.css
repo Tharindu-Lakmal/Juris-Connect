@@ -1,30 +1,28 @@
 
 .hero {
     width: 100%;
-    height: 70vh;
-    overflow: hidden;
-}
-
-.hero video {
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
+    padding: 50px 0;
+    background-color: #161616;
 }
 
 .hero-content {
-    position: absolute;
-    width: 100%;
-    height: 70vh;
-    top: 0;
+    position: relative;
+    width: 90%;
+    max-width: 920px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .hero-content .content {
     position: relative;
-    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -35,41 +33,56 @@
     margin: 30px auto;
 }
 
+.hero-content p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero-search {
+    margin-top: 50px;
+    width: 100%;
+    
+}
+
 
 /* Responsive Styles */
-
-@media only screen and (min-width: 540px) {
-    
-    .hero-content .content {
-        position: relative;
-        width: 80%;
-    }
-    .hero-content h1 {      
-        font-size: 42px;
-    }
-}
 
 
 @media only screen and (min-width: 768px) {
 
+    .hero-content {
+        max-width: 860px;
+    }
     .hero-content .content {
-        width: 70%;
+        width: 100%;
         text-align: center;
     }
     .hero-content .content h1 {
-        font-size: 42px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .hero-search {
+        max-width: 720px;
     }
 }
 
 
 @media only screen and (min-width: 1024px) {
+    .hero-content {
+        max-width: 860px;
+    }
     .hero-content .content {
-        width: 70%;
+        width: 100%;
         text-align: center;
     }
     .hero-content .content h1 {
-        font-size: 54px;
-        line-height: 58px;
+        font-size: 60px;
+        line-height: 70px;
+    }
+
+    .hero-search {
+        max-width: 720px;
     }
 }
 
@@ -78,7 +91,6 @@
 @media only screen and (min-width: 1480px) {
     .hero {
         max-width: 1920px;
-        height: 70vh;
         margin: 0 auto;
     }
 }

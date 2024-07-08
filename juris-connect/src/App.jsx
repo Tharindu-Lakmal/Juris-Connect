@@ -19,6 +19,8 @@ import LawyerProfile from "./Pages/LawyerProfile/LawyerProfile";
 import LawyerDetails from "./Pages/LawyerDetails/LawyerDetails";
 import BookAppointment from "./Pages/BookingAppointment/BookingAppointment";
 import ReviewsRatings from "./Pages/ReviewsRating/ReviewsRating";
+import Login from './components/Login/Login'
+
 
 
 
@@ -103,11 +105,19 @@ const router = createBrowserRouter([
 ]);
 function App() {
   
+  // const [showLogin,setLogin] = useState(false);
 
   return (
-    <div>
-      <RouterProvider router={router} />
-    </div>
+    <>
+      {/* {showLogin?<Login setlogin={setLogin} />:<></>} */}
+
+      <div>
+
+        {/* <Navbar setLogin={setLogin} /> */}
+
+        <RouterProvider router={router} />
+      </div>
+    </>
   );
 }
 

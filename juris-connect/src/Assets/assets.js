@@ -33,6 +33,8 @@ import down_arrow from './down_arrow.png'
 import verified from './verified.png'
 import lady_justice from './lady_justice.mp4'
 import legalquestionimg1 from './legalquestionimg1.png'
+import google from './google.png'
+import JurisConnect_logo from './JurisConnect_logo.png'
 
 export const assets = {
     legal_consultaion,
@@ -54,6 +56,8 @@ export const assets = {
     verified,
     lady_justice,
     legalquestionimg1,
+    google,
+    JurisConnect_logo,
 }
 
 
