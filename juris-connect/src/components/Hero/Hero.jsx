@@ -1,7 +1,6 @@
 import React from 'react'
 import './Hero.css'
 import SearchBar from '../SearchBar/SearchBar'
-import lady_justice from '../../assets/lady_justice.mp4'
 
 const Hero = () => {
   return (

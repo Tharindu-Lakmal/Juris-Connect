@@ -1,36 +1,82 @@
 
 .lvideos {
     width: 100%;
+    margin: 0 auto 80px;
+    padding: 60px 0;
+    background-color: var(--bg-background-dark);
 }
 
 .lvideos-container {
     width: 90%;
     margin: 40px auto 0;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
 }
 
 .lvideos h2 {
-    margin-bottom: 12px;
+    font-size: 42px;
+    margin-bottom: 12px; 
 }
 
+.lvideos p {
+    color: var(--text-color);
+    margin-top: 24px;
+}
+
+.lvideos-img-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+}
 
 .lvideos-img {
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-    gap: 16px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
-.lvideos-img img {
+.lvideos-img::-webkit-scrollbar {
+    display: none;
+}
+
+.lvideos-img div {
     width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    flex: none;
+    transition: transform 0.5s;
+}
+
+.lvideos-img div img {
+    width: 100%;
+}
+
+.control-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.control-btn img {
+    width: 60px;
+    height: 60px;
+    border: 1px solid var(--box-shadow);
+    border-radius: 100px;
+    box-shadow: 1px 1px 10px var(--box-shadow);
+    cursor: pointer;
 }
 
 
 /* Responsive Styles */
 
 @media only screen and (min-width: 540px) {
-    .lvideos h2 {
-        font-size: 42px;
-    }
+    
 }
 
 
@@ -38,47 +84,67 @@
     
     .lvideos-container {
         width: 80%;
-        margin: 50px auto 0;
+        margin: 0 auto;
     }
     
     .lvideos h2 {
         margin-bottom: 15px;
     }
+
+    .lvideos-img {
+        max-width: 680px;
+    }
+    
+    .lvideos-img div {
+        max-width: 680px;
+    }
 }
 
 
 @media only screen and (min-width: 1024px) {
+    .lvideos {
+        max-width: 100%;
+        padding: 100px 0 100px;
+        margin-top: 120px;
+    } 
+    
     .lvideos-container {
         width: 80%;
-        margin: 50px auto 0;
+        flex-direction: row;
+        gap: 70px;
+    }
+
+    .lvideos-content {
+        max-width: 40%;
+    }
+
+    
+
+    .lvideos-img-wrap {
+        max-width: 60%;
     }
     
     .lvideos h2 {
-        margin-bottom: 17px;
+        font-size: 48px;
+        margin-bottom: 24px;
     }
 }
 
 
 @media only screen and (min-width: 1280px) {
     .lvideos-container {
-        max-width: 1680px;
-        margin: 60px auto 0;
-    }
-    
-    .lvideos h2 {
-        margin-bottom: 24px;
+        max-width: 1280px;
     }
 
-    .lvideos-img {
-        grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    }
+    .lvideos {
+        margin-top: 120px;
+    } 
 }
 
 
 @media only screen and (min-width: 1480px) {
     
     .lvideos {
-        max-width: 1920px;
         margin: 0 auto;
     }
 }

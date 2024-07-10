@@ -15,6 +15,8 @@ const SubHeader = () => {
             </h2>
             <p>
               Get personalized legal advice by asking your questions directly or 
+              explore educational videos posted by our expert lawyers. 
+              Get personalized legal advice by asking your questions directly or 
               explore educational videos posted by our expert lawyers.
             </p>
 
