@@ -17,63 +17,81 @@ const PageCard = () => {
             </p>
 
             <div className="pagecard-content">
-                <Link to='/legalcon'>
+                <Link to='/legal_consultaion'>
                     <div className="pagecard">
                         <div className="pagecard-img">
-                            <img src={assets.legal_consultaion} alt="" />
+                            <img src={assets.consultation_icon} alt="" />
                         </div>
 
-                        <p className='card-text'>Legal Consultations</p>
+                        <div className="pagecard-text">
+                            <h3>Consultations</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
+                        </div>
                     </div>
                 </Link>
 
                 <Link to='/legal_education'>
                     <div className="pagecard">
                         <div className="pagecard-img">
-                            <img src={assets.legal_education} alt="" />
+                            <img src={assets.education_icon} alt="" />
                         </div>
 
-                        <p className='card-text'>Legal Educations</p>
+                        <div className="pagecard-text">
+                            <h3>Legal Education</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
+                        </div>
                     </div>
                 </Link>
 
                 <Link to='/lawyers'>
                     <div className="pagecard">
                         <div className="pagecard-img">
-                            <img src={assets.lawyers} alt="" />
+                            <img src={assets.lawyer_icon} alt="" />
                         </div>
 
-                        <p className='card-text'>Lawyers</p>
+                        <div className="pagecard-text">
+                            <h3>Lawyers</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
+                        </div>
                     </div>
                 </Link>
 
-                <Link to='/legalquestion'>
+                <Link to='/legal_questions'>
                     <div className="pagecard">
                         <div className="pagecard-img">
-                            <img src={assets.legal_questions} alt="" />
+                            <img src={assets.question_icon} alt="" />
                         </div>
 
-                        <p className='card-text'>Legal Questions</p>
+                        <div className="pagecard-text">
+                            <h3>Legal Question</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
+                        </div>
                     </div>
                 </Link>
 
                 <Link to='/blogs_news'>
                     <div className="pagecard">
                         <div className="pagecard-img">
-                            <img src={assets.blogs_news} alt="" />
+                            <img src={assets.blogs_icon} alt="" />
                         </div>
 
-                        <p className='card-text'>Blogs & News</p>
+                        <div className="pagecard-text">
+                            <h3>Blogs and News</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
+                        </div>
                     </div>
                 </Link>
 
                 <Link to='/lawyer_videos'>
                     <div className="pagecard">
                         <div className="pagecard-img">
-                            <img src={assets.lawyer_videos} alt="" />
+                            <img src={assets.video_icon} alt="" />
                         </div>
 
-                        <p className='card-text'>videos</p>
+                        <div className="pagecard-text">
+                            <h3>Lawyers Videos</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
+                        </div>
                     </div>
                 </Link>
             </div>

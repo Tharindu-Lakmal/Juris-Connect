@@ -14,37 +14,37 @@ import lawyer_12 from './lawyer_12.jpg'
 
 
 
-import legal_consultaion from './legal_consultation.png'
-import legal_education from './legal_education.png'
-import lawyer_videos from './lawyer_videos.png'
-import legal_questions from './legal_questions.png'
-import blogs_news from './blogs_news.png'
-import lawyers from './lawyers.png'
+
 import header1 from './header1.png'
-import qcard from './qcard.png'
-import video1 from './video1.png'
-import video2 from './video2.png'
-import video3 from './video3.png'
+import qcard1 from './qcard1.jpg'
+import qcard2 from './qcard2.jpg'
+import qcard3 from './qcard3.jpg'
+import video1 from './video1.jpg'
+import video2 from './video2.jpg'
+import video3 from './video3.jpg'
 import about1 from './about1.png'
 import about2 from './about2.png'
 import lawyers_bg from './lawyers_bg.png'
 import search from './search.png'
 import down_arrow from './down_arrow.png'
 import verified from './verified.png'
-import lady_justice from './lady_justice.mp4'
 import legalquestionimg1 from './legalquestionimg1.png'
 import google from './google.png'
 import JurisConnect_logo from './JurisConnect_logo.png'
+import lawyer_icon from './lawyer_icon.png'
+import consultation_icon from './consultation_icon.png'
+import education_icon from './education_icon.png'
+import question_icon from './question_icon.png'
+import blogs_icon from './blogs_icon.png'
+import video_icon from './video_icon.png'
+import left_arrow from './left_arrow.png'
+import right_arrow from './right_arrow.png'
 
 export const assets = {
-    legal_consultaion,
-    legal_education,
-    lawyer_videos,
-    legal_questions,
-    blogs_news,
-    lawyers,
     header1,
-    qcard,
+    qcard1,
+    qcard2,
+    qcard3,
     video1,
     video2,
     video3,
@@ -54,10 +54,17 @@ export const assets = {
     search,
     down_arrow,
     verified,
-    lady_justice,
     legalquestionimg1,
     google,
     JurisConnect_logo,
+    lawyer_icon,
+    consultation_icon,
+    education_icon,
+    question_icon,
+    blogs_icon,
+    video_icon,
+    right_arrow,
+    left_arrow,
 }
 
 
