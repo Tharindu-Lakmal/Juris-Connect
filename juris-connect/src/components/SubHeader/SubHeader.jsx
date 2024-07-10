@@ -8,7 +8,7 @@ const SubHeader = () => {
     <div className='subheader'>
         <div className="header-container">
 
-          <div className="content">
+          <div className="header-content">
             <h2>
               Your Trusted Source For Legal 
               Assistance And Information
