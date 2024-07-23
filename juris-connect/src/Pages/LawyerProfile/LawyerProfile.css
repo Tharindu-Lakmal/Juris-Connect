@@ -1,6 +1,6 @@
 .profile-container {
     text-align: center;
-    background-color: #002c4c;
+    background-color: #0E0E0E;
     color: white;
     /* padding: 50px 20px; */
     position: relative;
@@ -60,15 +60,14 @@
     gap: 3px;
     padding: 5px;
     border: none;
-    background-color: #002c4c;
+    background-color: #0E0E0E;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 .option:hover {
-    background-color: #002c4c;
-    opacity: 40%;
+    
     transform: translateY(-2px);
 }
 
@@ -85,8 +84,18 @@
 .title{
     padding-left: 122px;
     padding-top: 20px;
+    background-color: #0E0E0E;
+    
 }
-
+.title h2{
+    color: #fff;
+}
+.title p{
+    color: #fff;
+}
+.nested {
+    background-color: #0E0E0E;
+}
 .profile-details-navigation {
     display: flex;
     flex-direction: row;
@@ -100,21 +109,21 @@
 
 .profile-details-navigation .nav-link {
     text-decoration: none;
-    color: #000;
+    color: #2C56FE;
     padding: 10px 15px;
-    border: 1px solid #072839;
+    border: 1px solid #2C56FE;
     border-radius: 50px;
     transition: background-color 0.3s, color 0.3s;
    
 }
 
 .profile-details-navigation .nav-link:hover {
-    background-color: #a7a7a7;
+    background-color: #2C56FE;
     color: #fff;
 }
 
 .profile-details-content {
     padding: 20px;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #2C56FE;
 }
 

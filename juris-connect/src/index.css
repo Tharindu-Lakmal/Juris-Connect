@@ -65,8 +65,8 @@ label, input, select {
   opacity: 0.3;
 }
 .active {
-  background-color: #a7a7a7;
+  background-color: #2C56FE;
   color: #fff;
   display: inline-block;
-  /* font-weight: bold;  */
+  font-weight: bold; 
 }
