@@ -1,17 +1,27 @@
 
 .pagecards {
     width: 90%;
-    margin: 30px auto;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.pagecards h2 {
+    font-size: 36px;
+    line-height: 46px;
 }
 
 .heading-text {
     font-size: 18px;
-    color: #272727;
-    margin: 8px 0 15px 0;
+    color: var(--text-color);
+    margin: 8px 0 60px 0;
+}
+
+.pagecard-img {
+    width: 100%;
 }
 
 .pagecard-img img {
-    width: 100%;
+    max-width: 100px;
     transition: ease-in-out 0.3s;
 }
 
@@ -19,26 +29,48 @@
     scale: 0.98;
 }
 
+.pagecard {
+    background-color: var(--bg-light-gray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid var(--border-color);
+    box-shadow: 1px 1px 6px var(--box-shadow);
+    transition: ease-in-out 0.3s;
+}
+
+.pagecard:is(:hover, :focus-visible) {
+    scale: 0.98;
+}
 
 .pagecard-content {
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
-    margin-top: 30px;
-    gap: 50px;
+    margin-top: 60px;
+    gap: 20px;
     row-gap: 18px;
+}
+
+.pagecard-text {
+    display: grid;
+    gap: 10px;
 }
 
 .pagecard .card-text {
     font-weight: 500;
-    color: #272727;
-    font-size: 18px;
-    opacity: 1;
+    color: var(--text-color);
+    font-size: 14px;
+    opacity: 0.7;
 }
 
 
 /* Responsive Styles */
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 768px) {
     .pagecards {
         width: 80%;
         margin: 40px auto;
@@ -48,7 +80,6 @@
     .pagecard-content {
         grid-template-columns: repeat(auto-fill,minmax(250px,2fr));
         margin-top: 30px;
-        gap: 40px;
         row-gap: 18px;
     }
 }
@@ -59,11 +90,14 @@
         margin: 80px auto;
     }
     
+    .pagecards h2 {  
+        font-size: 48px;
+        line-height: 64px;
+    }
     
     .pagecard-content {
         grid-template-columns: repeat(auto-fill,minmax(240px,3fr));
         margin-top: 30px;
-        gap: 50px;
         row-gap: 18px;
     }
 }
@@ -71,19 +105,18 @@
 
 @media only screen and (min-width: 1280px) {
     
-    .p-container {
+    .container {
         max-width: 1920px;
     }
     .pagecards {
-        width: 80%;
-        max-width: 1680px;
+        width: 70%;
+        max-width: 1080px;
         margin: 80px auto 0;
     }
 
     .pagecard-content {
         grid-template-columns: repeat(auto-fill,minmax(290px,3fr));
         margin-top: 30px;
-        gap: 30px;
         row-gap: 18px;
     }
 

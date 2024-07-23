@@ -8,12 +8,14 @@ const SubHeader = () => {
     <div className='subheader'>
         <div className="header-container">
 
-          <div className="content">
+          <div className="header-content">
             <h2>
               Your Trusted Source For Legal 
               Assistance And Information
             </h2>
             <p>
+              Get personalized legal advice by asking your questions directly or 
+              explore educational videos posted by our expert lawyers. 
               Get personalized legal advice by asking your questions directly or 
               explore educational videos posted by our expert lawyers.
             </p>
