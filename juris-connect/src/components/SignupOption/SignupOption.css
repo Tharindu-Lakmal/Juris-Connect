@@ -46,6 +46,9 @@
     background-color: rgb(44, 86, 254);
     cursor: pointer;
 }
+.page-btn a {
+    width: 100%;
+}
 
 .form-inputs .login-btn:is(:hover, :focus-visible) {
     background-color: rgb(44, 86, 254, 0.8);

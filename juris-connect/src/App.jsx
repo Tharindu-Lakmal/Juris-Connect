@@ -1,10 +1,11 @@
-
+import React, { useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
 import Legalcon from "./Pages/Legalconsultation/Legalcon";
 import Navbar from "./components/Header/Navbar";
-import {createBrowserRouter,RouterProvider,} from "react-router-dom";
+// import {createBrowserRouter,Route,RouterProvider,} from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import LVideos from "./components/LVideos/LVideos";
 import QCard from "./components/QCard/QCard";
@@ -20,105 +21,109 @@ import LawyerDetails from "./Pages/LawyerDetails/LawyerDetails";
 import BookAppointment from "./Pages/BookingAppointment/BookingAppointment";
 import ReviewsRatings from "./Pages/ReviewsRating/ReviewsRating";
 import Login from './components/Login/Login'
+import NavBar from "./components/Header/Navbar";
+import Footer from './components/Footer/Footer';
+import UserSignIn from './Pages/UserSignIn/UserSignIn';
 
 
 
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element:<Home />,
-  },
-  {
-    path: "/home",
-    element:<Home />,
-  },
-  {
-    path: "/legalcon",
-    element:<Legalcon />,
-  },
-  {
-    path: "/about",
-    element:<About />,
-  },
-  {
-    path: "/hero",
-    element:<Hero />,
-  },
-  {
-    path: "/lvideos",
-    element:<LVideos />,
-  },
-  {
-    path: "/qcard",
-    element:<QCard />,
-  },
-  {
-    path: "/searchbar",
-    element:<SearchBar />,
-  },
-  {
-    path: "/subheader",
-    element:<SubHeader />,
-  },
-  {
-    path: "/blognews",
-    element:<BlogNews />,
-  },
-  {
-    path: "/lawyers",
-    element:<Lawyers />,
-  },
-  {
-    path: "/legaleducation",
-    element:<LegalEducation />,
-  },
-  {
-    path: "/legalquestion",
-    element:<LegalQuestion />,
-  }, 
-  {
-    path: "/legalvideos",
-    element:<LegalVideos />,
-  },
-  {
-    path: "/lawyerprofile",
-    element:<LawyerProfile />,
-    children: [
-      {
-        path: "lawyerdetails",
-        element: <LawyerDetails />,
-      },
-      {
-        path: "bookappointment",
-        element: <BookAppointment />,
-      },
-      {
-        path: "reviewsratings",
-        element: <ReviewsRatings />,
-      },
+// const router = createBrowserRouter([
+//   { path: "/", element:<Home />, },
+//   { path: "/home", <Home />, },
+//   { path: "/legalcon", element:<Legalcon />, },
+//   { path: "/about", element:<About />, },
+//   { path: "/hero", element:<Hero />, },
+//   { path: "/lvideos", element:<LVideos />, },
+//   { path: "/qcard", element:<QCard />, },
+//   { path: "/searchbar", element:<SearchBar />, },
+//   { path: "/subheader", element:<SubHeader />, },
+//   { path: "/blognews", element:<BlogNews />, },
+//   { path: "/lawyers", element:<Lawyers />, },
+//   { path: "/legaleducation", element:<LegalEducation />, },
+//   { path: "/legalquestion", element:<LegalQuestion />, }, 
+//   { path: "/legalvideos", element:<LegalVideos />, },
+//   {
+//     path: "/lawyerprofile",
+//     element:<LawyerProfile />,
+//     children: [
+//       {
+//         path: "lawyerdetails",
+//         element: <LawyerDetails />,
+//       },
+//       {
+//         path: "bookappointment",
+//         element: <BookAppointment />,
+//       },
+//       {
+//         path: "reviewsratings",
+//         element: <ReviewsRatings />,
+//       },
     
-     ],
-  },
+//      ],
+//   },
+
+// ]);
+
+// function App() {
+
+//   return (
+//       <div>
+//         <RouterProvider router={router} />
+//       </div>
+//   );
+// }
+
+// export default App
 
 
-]);
-function App() {
-  
-  // const [showLogin,setLogin] = useState(false);
+const App = () => {
+
+  const [showLogin,setLogin] = useState(false);
 
   return (
     <>
-      {/* {showLogin?<Login setlogin={setLogin} />:<></>} */}
+    {showLogin?<Login setlogin={setLogin} />:<></>}
 
-      <div>
+      <div className='app'>
 
-        {/* <Navbar setLogin={setLogin} /> */}
+        <NavBar setLogin={setLogin} />
 
-        <RouterProvider router={router} />
+        <Routes>
+          
+          <Route path='/' element={<Home />} />
+          <Route path='/legal_consultation' element={<Legalcon />} />
+          <Route path='/legal_education' element={<LegalEducation />} />
+          <Route path='/lawyers' element={<Lawyers />} />
+          <Route path='/legal_questions' element={<LegalQuestion />} />
+          <Route path='/blogs_news' element={<BlogNews />} />
+          <Route path='/lawyer_videos' element={<LegalVideos />} />
+
+          <Route path="/about" element={<About />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/hero" element={<Hero />} />
+          <Route path="/lvideos" element={<LVideos />} />
+          <Route path="/qcard" element={<QCard />} />
+          <Route path="/searchbar" element={<SearchBar />} />
+          <Route path="/subheader" element={<SubHeader />} />
+
+          <Route 
+            path="/lawyerprofile" 
+            element={<LawyerProfile />} 
+          >
+            <Route path="lawyerdetails" element={<LawyerDetails />} />
+            <Route path="bookappointment" element={<BookAppointment />} />
+            <Route path="reviewsratings" element={<ReviewsRatings />} />
+          </Route>
+
+          <Route path='usersignin' element={<UserSignIn />} />
+
+        </Routes>
+
+        <Footer />
       </div>
-    </>
-  );
+    </> 
+  )
 }
 
 export default App
