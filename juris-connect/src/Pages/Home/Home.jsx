@@ -1,7 +1,5 @@
 import React from 'react'
 import './Home.css'
-import Navbar from '../../components/Header/Navbar'
-import Footer from '../../components/Footer/Footer'
 import Hero from '../../components/Hero/Hero'
 import PageCard from '../../components/PageCard/PageCard'
 import SubHeader from '../../components/SubHeader/SubHeader'
@@ -19,7 +17,6 @@ const Home = () => {
       <QCard />
       <LVideos />
       <About />
-      <Footer />
       
     </div>
   )

@@ -1,6 +1,7 @@
 import React from 'react'
 import './SignupOption.css'
 import { assets } from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const SignupOption = ({setSignUp}) => {
   return (
@@ -18,8 +19,9 @@ const SignupOption = ({setSignUp}) => {
         </div>
 
         <div className="page-btn">
-            <button>Sign up as a user</button>
-            <button>Sign up as a lawyer</button>
+            <Link to='/usersignin'><button>Sign up as a user</button></Link>
+
+            <Link to='/usersignin'><button>Sign up as a lawyer</button></Link>
         </div>
 
         <p>Already have an account? <span onClick={() => setSignUp("form-container")} className='divider'>Sign in</span></p>
