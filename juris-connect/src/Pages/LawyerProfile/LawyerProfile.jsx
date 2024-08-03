@@ -15,7 +15,6 @@ import { NavLink, Outlet } from 'react-router-dom';
 function LawyerProfile() {
   return (
     <div> 
-        <Navbar />
     <div className="profile-container">
         <div>
             <img src={img2} className='profile-cover' />
@@ -62,7 +61,6 @@ function LawyerProfile() {
                 </div>
             </div>
         
-        <Footer />
         </div>
     );
 };
