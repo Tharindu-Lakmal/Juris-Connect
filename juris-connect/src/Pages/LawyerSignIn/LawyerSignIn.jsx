@@ -1,10 +1,10 @@
 import React from 'react'
-import './UserSignIn.css'
+import './LawyerSignIn.css'
 import { assets } from '../../assets/assets'
 
-const UserSignIn = () => {
+const LawyerSignIn = () => {
   return (
-    <div className='usersignin'>
+    <div className='lawyersignin'>
         <div className="usersignin-container">
 
             <h3>Create an account</h3>
@@ -18,6 +18,8 @@ const UserSignIn = () => {
                         <input type="text" placeholder='User name' required />
                         <input type="text" placeholder='Email' required />
                         <input type="text" placeholder='Mobile number' required />
+                        <input type="password" placeholder='Password (min 6 characters)' required />
+                        <input type="password" placeholder='Confirm password' required />
                         <input type="password" placeholder='Password (min 6 characters)' required />
                         <input type="password" placeholder='Confirm password' required />
 
@@ -38,10 +40,10 @@ const UserSignIn = () => {
                 </div>
             </div>
 
-            
+
         </div>
     </div>
   )
 }
 
-export default UserSignIn
+export default LawyerSignIn

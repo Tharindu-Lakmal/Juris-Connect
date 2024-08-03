@@ -12,6 +12,8 @@
   --bg-background-dark: rgb(14, 14, 14);
   --bg-light-gray: rgb(30, 30, 30);
 
+  --search-bg: rgba(255, 255, 255, 0.05);
+
   --text-color: rgb(255, 255, 255);
   --text-light-placeholder: rgb(39, 39, 39);
 
@@ -23,24 +25,28 @@
 
   --box-shadow: rgb(255, 255, 255, 0.08);
 
+  --input-bg: rgb(255, 255, 255, 0.1);
 
-  /* Colors for light design */
-  @media (prefers-color-scheme: light) {
-    body {
-      /* --bg-background-light: rgb(22, 22, 22); */
-      --bg-background-dark: rgb(255, 255, 255);
-      /* --bg-light-gray: rgb(30, 30, 30); */
-    
-      --text-color: rgb(14, 14, 14);
-    
-      --button-sea-blue: rgb(42, 84, 254);
-      --button-active-blue: rgba(42, 84, 254, 0.9);
-      --button-active: rgb(22, 22, 22, 0.04);
-    
-      --border-color: rgb(255, 255, 255, 0.2);
-    }
-  }
+}
 
+[data-theme="light"] {
+  --bg-background-light: rgb(233, 233, 233);
+  --bg-background-dark: rgb(255, 255, 255);
+  --bg-light-gray: rgb(30, 30, 30); 
+
+  --search-bg: rgba(120, 120, 120, 0.05);
+
+  --text-color: rgb(14, 14, 14);
+
+  --button-sea-blue: rgb(42, 84, 254);
+  --button-active-blue: rgba(42, 84, 254, 0.9);
+  --button-active: rgb(22, 22, 22, 0.04);
+
+  --border-color: rgba(71, 71, 71, 0.2);
+
+  --box-shadow: rgba(81, 81, 81, 0.08);
+
+  --input-bg: rgba(27, 27, 27, 0.1);
 }
 
 
@@ -54,9 +60,9 @@
 }
 
 body {
+  background-color: var(--bg-background-light);
   min-height: 100vh;
   scroll-behavior: smooth;
-  background-color: var(--bg-background-light);
 }
 
 button {
@@ -80,6 +86,7 @@ ul li {
 }
 
 h1 {
+  color: var(--text-color);
   font-size: 54px;
   font-weight: 800;
   letter-spacing: 0.5px;
@@ -129,9 +136,9 @@ label, input, select {
   color: rgb(39, 39, 39);
   opacity: 0.3;
 }
-.active {
+/* .active {
   background-color: #a7a7a7;
   color: #fff;
   display: inline-block;
-  /* font-weight: bold;  */
-}
+  /* font-weight: bold; 
+} */

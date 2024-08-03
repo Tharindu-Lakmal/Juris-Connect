@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './App.css'
 import { Route, Routes } from 'react-router-dom'
 
 import About from "./Pages/About/About";
@@ -24,6 +25,8 @@ import Login from './components/Login/Login'
 import NavBar from "./components/Header/Navbar";
 import Footer from './components/Footer/Footer';
 import UserSignIn from './Pages/UserSignIn/UserSignIn';
+import LawyerSignIn from './Pages/LawyerSignIn/LawyerSignIn';
+import SignupOption from './components/SignupOption/SignupOption';
 
 
 
@@ -85,7 +88,7 @@ const App = () => {
     <>
     {showLogin?<Login setlogin={setLogin} />:<></>}
 
-      <div className='app'>
+      <div className='app' data-theme="light">
 
         <NavBar setLogin={setLogin} />
 
@@ -117,6 +120,7 @@ const App = () => {
           </Route>
 
           <Route path='usersignin' element={<UserSignIn />} />
+          <Route path='lawyaersignin' element={<LawyerSignIn />} />
 
         </Routes>
 

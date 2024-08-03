@@ -1,8 +1,12 @@
 
+.navbar-header ul {
+    padding-left: 0;
+}
+
 .navbar button {
     font-size: 18px;
     font-weight: 500;
-    color: var(--text-color);
+    color: rgb(255, 255, 255);
     border: none;
     padding: 8px 12px;
     border-radius: 8px;

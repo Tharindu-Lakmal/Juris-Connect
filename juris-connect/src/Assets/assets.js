@@ -39,6 +39,7 @@ import blogs_icon from './blogs_icon.png'
 import video_icon from './video_icon.png'
 import left_arrow from './left_arrow.png'
 import right_arrow from './right_arrow.png'
+import registration_icon from './registration-icon.jpg'
 
 export const assets = {
     header1,
@@ -65,6 +66,7 @@ export const assets = {
     video_icon,
     right_arrow,
     left_arrow,
+    registration_icon,
 }
 
 
