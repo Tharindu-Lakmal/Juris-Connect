@@ -12,7 +12,7 @@ function LegalQuestion() {
       <LegalQHero />
       <LegalQCard />
       {/* <Footer /> */}
-    /</div>
+    </div>
   )
 }
 

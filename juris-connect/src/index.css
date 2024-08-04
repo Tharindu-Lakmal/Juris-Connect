@@ -27,10 +27,12 @@
 
   --input-bg: rgb(255, 255, 255, 0.1);
 
+  --toggle-color: rgb(255, 255, 255, 0.8);
+
 }
 
 [data-theme="light"] {
-  --bg-background-light: rgb(233, 233, 233);
+  --bg-background-light: rgb(245, 245, 245);
   --bg-background-dark: rgb(255, 255, 255);
   --bg-light-gray: rgb(30, 30, 30); 
 
@@ -47,6 +49,8 @@
   --box-shadow: rgba(81, 81, 81, 0.08);
 
   --input-bg: rgba(27, 27, 27, 0.1);
+
+  --toggle-color: rgb(255, 255, 255, 0.4);
 }
 
 
