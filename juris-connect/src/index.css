@@ -136,9 +136,9 @@ label, input, select {
   color: rgb(39, 39, 39);
   opacity: 0.3;
 }
-/* .active {
-  background-color: #a7a7a7;
+.active {
+  background-color: #2C56FE;
   color: #fff;
   display: inline-block;
-  /* font-weight: bold; 
-} */
+  font-weight: bold; 
+}

@@ -45,7 +45,7 @@ function LawyerProfile() {
                 </button>
             </div>
         </div>
-            <div>
+            <div className='nested'>
                 <div className='title'>
                     <h2>Empowering Sri Lankans with Legal Knowledge and Access</h2>
                     <p>Easily remove the background from images in Adobe Express, your all-in-one AI content creation app.</p>
