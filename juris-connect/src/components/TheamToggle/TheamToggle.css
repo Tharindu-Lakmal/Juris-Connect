@@ -1,0 +1,17 @@
+
+.toggle-container {
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+.toggle {
+    visibility: hidden;
+}
+
+.toggle-container img {
+    width: 32px;
+    background-color: var(--toggle-color);
+    padding: 5px;
+    border-radius: 30px;
+}
