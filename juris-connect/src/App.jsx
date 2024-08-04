@@ -83,14 +83,15 @@ import SignupOption from './components/SignupOption/SignupOption';
 const App = () => {
 
   const [showLogin,setLogin] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   return (
     <>
     {showLogin?<Login setlogin={setLogin} />:<></>}
 
-      <div className='app' data-theme="light">
+      <div className='app' data-theme={isDark? "light": "dark"}>
 
-        <NavBar setLogin={setLogin} />
+        <NavBar setLogin={setLogin} isCheckedtest={isDark} handleChangetest={()=>setIsDark(!isDark)} />
 
         <Routes>
           

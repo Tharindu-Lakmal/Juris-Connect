@@ -1,14 +1,18 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import { Link } from 'react-router-dom'
+import TheamToggle from '../TheamToggle/TheamToggle';
 
-const NavBar = ({setLogin}) => {
+const NavBar = ({setLogin, isCheckedtest, handleChangetest}) => {
 
     const [isOpen, setIsOpen] = useState(false);
 
     const NavActive = () => {
         setIsOpen(!isOpen);
     }
+
+    const isChecked = isCheckedtest;
+    const handleChange = handleChangetest;
 
 
   return (
@@ -39,7 +43,9 @@ const NavBar = ({setLogin}) => {
                             <li className='navbar-link'><a href="#">Home</a></li>
                             <li className='navbar-link'><a href="#">Community Forum</a></li>
                             <li className='navbar-link'><a href="#">About us</a></li>
+                            <TheamToggle isChecked={isChecked} handleChange={handleChange} />
                         </ul>
+                        {/* <TheamToggle /> */}
                     </div>
 
                     {/* sign in btn */}
