@@ -1,5 +1,5 @@
 import React from 'react';
-import img1 from "../../assets/video1.png";
+import img1 from "../../assets/video1.jpg";
 import '../LawyerDetails/LawyerDetails.css';
 
 
