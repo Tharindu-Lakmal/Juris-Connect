@@ -20,13 +20,13 @@
     gap: 24px;
 }
 .signupOption .text-header h3 {
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 32px;
     font-weight: 600;
 }
 
 .signupOption p {
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 400;
 }

@@ -6,6 +6,7 @@ import SignupOption from '../SignupOption/SignupOption';
 const Login = ({setlogin}) => {
 
     const[signUp, setSignUp] = useState("form-container");
+    const setLogin = setlogin;
 
   return (
     <div className='logincard'>
@@ -37,7 +38,7 @@ const Login = ({setlogin}) => {
             </form>
 
             <div className={signUp==="form-signup"?"form-signup":"form-signup hide"}>
-                <SignupOption setSignUp={setSignUp} />
+                <SignupOption setSignUp={setSignUp} setlogin={setLogin} />
             </div>
             
             <div className="condition-footer">

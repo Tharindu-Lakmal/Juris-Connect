@@ -1,3 +1,6 @@
+.about {
+    background-color: var(--bg-background-light);
+}
 
 .container {
     width: 90%;

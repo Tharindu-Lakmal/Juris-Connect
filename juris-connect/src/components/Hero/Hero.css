@@ -2,7 +2,7 @@
 .hero {
     width: 100%;
     padding: 50px 0;
-    background-color: #161616;
+    background-color: var(--bg-background-light);
 }
 
 .hero-content {
@@ -29,7 +29,6 @@
 .hero-content h1 {
     font-size: 42px;
     line-height: 48px;
-    color: white;
     margin: 30px auto;
 }
 

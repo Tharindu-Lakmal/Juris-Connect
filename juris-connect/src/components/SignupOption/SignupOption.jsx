@@ -3,7 +3,7 @@ import './SignupOption.css'
 import { assets } from '../../assets/assets'
 import { Link } from 'react-router-dom'
 
-const SignupOption = ({setSignUp}) => {
+const SignupOption = ({setSignUp, setlogin}) => {
   return (
     <div className='signupOption'>
         <div className='signupOption-logo'>
@@ -19,9 +19,9 @@ const SignupOption = ({setSignUp}) => {
         </div>
 
         <div className="page-btn">
-            <Link to='/usersignin'><button>Sign up as a user</button></Link>
+            <Link to='/usersignin'><button onClick={()=>setlogin(false)}>Sign up as a user</button></Link>
 
-            <Link to='/usersignin'><button>Sign up as a lawyer</button></Link>
+            <Link to='/lawyaersignin'><button onClick={()=>setlogin(false)}>Sign up as a lawyer</button></Link>
         </div>
 
         <p>Already have an account? <span onClick={() => setSignUp("form-container")} className='divider'>Sign in</span></p>
