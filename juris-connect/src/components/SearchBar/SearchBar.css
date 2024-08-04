@@ -19,16 +19,16 @@
 .searchbar input {
     height: 48px;
     width: 100%;
-    border: 1px solid rgb(255, 255, 255, 0.4);
-    background-color: hsla(0, 0%, 100%, 0.05);
+    border: 1px solid var(--border-color);
+    background-color: var(--search-bg);
     border-radius: 8px;
     padding-left: 20px;
     outline: none;
-    color: white;
+    color: var(--text-color);
 }
 .searchbar input::placeholder {
     font-size: 14px;
-    color: rgb(255, 255, 255, 1);
+    color: var(--text-color);
     opacity: 0.8;
 }
 
@@ -50,7 +50,7 @@
 }
 
 .searchbar .searchbar-container p {
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     font-size: 14px;
     font-weight: 300;
     margin-top: 6px;

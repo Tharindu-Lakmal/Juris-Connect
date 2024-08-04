@@ -44,8 +44,8 @@ const NavBar = ({setLogin}) => {
 
                     {/* sign in btn */}
                     <div className="navbar-btn">
-                        <button onClick={()=>setLogin(true)} className="login">Log in</button>
-                        <button className="signup">Sign up</button>
+                        <button onClick={()=>setLogin(true)} className="signup">Log in</button>
+                        {/* <button onClick={()=>setLogin(true)} className="signup">Sign up</button> */}
                     </div>
                 </nav>
 

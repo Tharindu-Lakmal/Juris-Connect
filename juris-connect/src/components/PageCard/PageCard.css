@@ -1,4 +1,6 @@
-
+.p-container {
+    background-color: var(--bg-background-light);
+}
 .pagecards {
     width: 90%;
     margin: 0 auto 40px;
@@ -30,7 +32,7 @@
 }
 
 .pagecard {
-    background-color: var(--bg-light-gray);
+    background-color: var(--bg-background-light);
     display: flex;
     flex-direction: column;
     align-items: center;
