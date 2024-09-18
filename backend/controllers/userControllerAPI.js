@@ -27,4 +27,29 @@ const addUserDetails = async (req,res) => {
 
 }
 
-export {addUserDetails}
+// all user list
+const listuser = async (req, res) => {
+    try {
+        const user = await userModel.find({});
+        res.json({success:true, data:user})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, message:"Error"})
+    }
+}
+
+//remove user
+const removeUser = async (req, res) => {
+    try {
+        const user = await userModel.findById(req.body.id);
+        fs.unlink(`uploads/${user.image}`, () => {})
+
+        await userModel.findByIdAndDelete(req.body.id);
+        res.json({success:true, message:"User Removed"})
+    } catch (error) {
+        console.log(error);
+        res.json({success:false, message:"Error"})
+    }
+}
+
+export {addUserDetails, listuser, removeUser}

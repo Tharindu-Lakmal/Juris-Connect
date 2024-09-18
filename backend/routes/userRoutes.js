@@ -1,5 +1,5 @@
 import express from "express"
-import { addUserDetails } from "../controllers/UserControllerAPI.js"
+import { addUserDetails, listuser, removeUser } from "../controllers/UserControllerAPI.js"
 import multer from "multer" //create image storage system
 
 const userRouter = express.Router(); //using this create get, post, delete, update methods
@@ -17,6 +17,8 @@ const upload = multer({storage:storage}) // store the image in uploads folder
 
 
 userRouter.post("/add",upload.single("user_image"),addUserDetails) //use to send the data on server and get the responce
+userRouter.get("/list", listuser)
+userRouter.post("/remove", removeUser);
 
 
 

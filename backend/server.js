@@ -4,6 +4,7 @@ import express from "express"
 import cors from "cors"
 import { connectDB } from "./config/db.js"
 import userRouter from "./routes/userRoutes.js"
+import lawyerRouter from "./routes/lawyerRoutes.js"
 
 
 // app config
@@ -20,6 +21,7 @@ connectDB();
 // api endpoints
 // 1. api endpoints for userRoutes
 app.use("/api/user", userRouter)
+app.use("/api/lawyer", lawyerRouter)
 app.use("/images", express.static('uploads')) // access uploaded images from the frontend
 
 
