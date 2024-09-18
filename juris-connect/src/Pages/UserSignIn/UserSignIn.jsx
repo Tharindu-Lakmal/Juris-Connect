@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './UserSignIn.css'
 import { assets } from '../../assets/assets'
 
 const UserSignIn = () => {
+
+    const [image, setImage] = useState(false);
+
   return (
     <div className='usersignin'>
         <div className="usersignin-container">
@@ -15,6 +18,16 @@ const UserSignIn = () => {
             <div className="usersignin-form-container">
                 <div className="usersignin-form">
                     <form className='form-container'>
+                        <div className="profile-img">
+                            <p>Upload profile picture:</p>
+                            <div className="pi-container">
+                                <label htmlFor="image">
+                                    <img src={image?URL.createObjectURL(image):assets.profile_icon} alt="" />
+                                </label>
+                                <img src={assets.pen} alt="" className="pen" />
+                                <input onChange={(e) => setImage(e.target.files[0])} type="file" id='image' hidden required />
+                            </div>
+                        </div>
                         <input type="text" placeholder='User name' required />
                         <input type="text" placeholder='Email' required />
                         <input type="text" placeholder='Mobile number' required />

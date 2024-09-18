@@ -93,7 +93,7 @@ const App = () => {
 
         <NavBar setLogin={setLogin} isCheckedtest={isDark} handleChangetest={()=>setIsDark(!isDark)} />
 
-        <Routes>
+        <Routes>  
           
           <Route path='/' element={<Home />} />
           <Route path='/legal_consultation' element={<Legalcon />} />

@@ -53,7 +53,7 @@ const LawyerSearch = () => {
                         </label>
 
                         <button className='lawyersearch-btn' type='submit'>
-                            <img src="/search.png" alt="" />
+                            <p>Search</p>
                         </button>
 
                     </form>

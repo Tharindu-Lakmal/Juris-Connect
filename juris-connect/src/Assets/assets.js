@@ -15,7 +15,7 @@ import lawyer_12 from './lawyer_12.jpg'
 
 
 
-import header1 from './header1.png'
+import header1 from './header1.jpeg'
 import qcard1 from './qcard1.jpg'
 import qcard2 from './qcard2.jpg'
 import qcard3 from './qcard3.jpg'
@@ -39,8 +39,11 @@ import blogs_icon from './blogs_icon.png'
 import video_icon from './video_icon.png'
 import left_arrow from './left_arrow.png'
 import right_arrow from './right_arrow.png'
-import registration_icon from './registration-icon.jpg'
+import registration_icon from './registration-icon.jpeg'
+import registration_icon2 from './registration-icon2.jpeg'
 import sun from './sun.svg'
+import profile_icon from './profile-icon.jpg'
+import pen from './pen.png'
 
 export const assets = {
     header1,
@@ -68,7 +71,10 @@ export const assets = {
     right_arrow,
     left_arrow,
     registration_icon,
+    registration_icon2,
     sun,
+    profile_icon,
+    pen,
 }
 
 
