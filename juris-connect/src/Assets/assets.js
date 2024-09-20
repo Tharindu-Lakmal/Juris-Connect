@@ -44,6 +44,8 @@ import registration_icon2 from './registration-icon2.jpeg'
 import sun from './sun.svg'
 import profile_icon from './profile-icon.jpg'
 import pen from './pen.png'
+import logout from './shutdown.png'
+import user from './user-profile.png'
 
 export const assets = {
     header1,
@@ -75,6 +77,9 @@ export const assets = {
     sun,
     profile_icon,
     pen,
+    lawyer_2,
+    logout,
+    user,
 }
 
 

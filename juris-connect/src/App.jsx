@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
+import StoreContextProvider from '../context/StoreContext';
 
 import About from "./Pages/About/About";
 import Home from "./Pages/Home/Home";
@@ -87,6 +88,7 @@ const App = () => {
 
   return (
     <>
+    <StoreContextProvider>
     {showLogin?<Login setlogin={setLogin} />:<></>}
 
       <div className='app' data-theme={isDark? "light": "dark"}>
@@ -127,6 +129,7 @@ const App = () => {
 
         <Footer />
       </div>
+      </StoreContextProvider>
     </> 
   )
 }

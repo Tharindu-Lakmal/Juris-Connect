@@ -5,6 +5,7 @@ import cors from "cors"
 import { connectDB } from "./config/db.js"
 import userRouter from "./routes/userRoutes.js"
 import lawyerRouter from "./routes/lawyerRoutes.js"
+import 'dotenv/config'
 
 
 // app config
