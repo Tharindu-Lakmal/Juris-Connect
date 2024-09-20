@@ -7,7 +7,7 @@ const LawyerSignIn = () => {
     <div className='lawyersignin'>
         <div className="usersignin-container">
 
-            <h3>Create an account</h3>
+            <h3>Create an account as a lawyer</h3>
             <p>
                 Easily remove the background from images in Adobe Express, 
                 your all-in-one AI content creation app.
@@ -36,7 +36,7 @@ const LawyerSignIn = () => {
                 </div>
 
                 <div className="usersignin-img">
-                    <img src={assets.registration_icon} alt="" />
+                    <img src={assets.registration_icon2} alt="" />
                 </div>
             </div>
 

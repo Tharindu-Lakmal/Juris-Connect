@@ -15,8 +15,12 @@
 }
 
 .lawyerhero-content h1 {
-    color: #140A24;
+    color: var(--text-color);
     margin-bottom: 14px;
+}
+
+.lawyerhero-content p {
+    color: var(--text-color);
 }
 
 .lawyerhero-img {
