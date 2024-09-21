@@ -2,6 +2,7 @@
 import React from 'react'
 import './LegalQHero.css'
 import { assets } from '../../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const LegalQHero = () => {
   return (
@@ -22,9 +23,7 @@ const LegalQHero = () => {
 
             <div className="legalqhero-img">
                 <img src={assets.legalquestionimg1} alt="" />
-            </div>
-
-         
+            </div> 
 
         </div>
         <div className="legalqcard-topic-content">
@@ -34,7 +33,9 @@ const LegalQHero = () => {
                   </h2>
                   </div>
                   <div>
-                  <button className="question-btn"> <a href="Legalcon">Ask a question</a></button>
+                  <button className="question-btn"> 
+                    <Link to='/legal_consultation'>Ask a question</Link>
+                  </button>
                   </div>
               </div>
     </div>

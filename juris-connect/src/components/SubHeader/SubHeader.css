@@ -47,6 +47,7 @@
 
 .header-container .btn:is(:hover, :focus-visible) {
     background-color: rgba(42, 84, 254, 0.9);
+    color: rgb(255, 255, 255);
   }
 
 .subheading-img {
