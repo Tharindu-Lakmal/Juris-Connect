@@ -89,8 +89,8 @@ const PageCard = () => {
                         </div>
 
                         <div className="pagecard-text">
-                            <h3>Virtual Tools for Legal Understanding </h3>
-                            <p className='card-text'>Immersive AR/VR tools for legal guidance</p>
+                            <h3>Lawyers Videos</h3>
+                            <p className='card-text'>Enjoy technical deep-dives, one-on-one expert advice</p>
                         </div>
                     </div>
                 </Link>

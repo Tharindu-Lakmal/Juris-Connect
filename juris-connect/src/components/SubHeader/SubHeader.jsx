@@ -10,23 +10,20 @@ const SubHeader = () => {
 
           <div className="header-content">
             <h2>
-              Your Trusted Source For Legal 
-              Assistance And Information
+              Virtual Tools for Legal Understanding 
             </h2>
             <p>
-              Get personalized legal advice by asking your questions directly or 
-              explore educational videos posted by our expert lawyers. 
-              Get personalized legal advice by asking your questions directly or 
-              explore educational videos posted by our expert lawyers.
+              Experience customized guidance through our immersive AR/VR tools, 
+              designed to enhance your understanding and confidence in legal settings
             </p>
 
             <div className="btn-container">
               <button className="btn">
-                  <Link to='/legal_consultation'>Get Advices</Link>
+                  <Link to='/lawyer_videos'>Explore Legal Guidance</Link>
               </button>
-              <button className="btn">
+              {/* <button className="btn">
                   <Link to='/lawyer_videos'>View Lawyer Contents</Link>
-              </button>
+              </button> */}
             </div>
           </div>
 
