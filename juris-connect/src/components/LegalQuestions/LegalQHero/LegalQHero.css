@@ -15,8 +15,12 @@
 }
 
 .legalqhero-content h1 {
-    color: #140A24;
+    color: var(--text-color);
     margin-bottom: 14px;
+}
+
+.legalqhero-content p {
+    color: var(--text-color);
 }
 
 .legalqhero-img {
@@ -29,9 +33,18 @@
     width: 100%;
 }
 
-.legalqcard-topic-heading {
-    width: 80%;
-    margin: 0 auto;
+
+.question-btn {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    background-color: var(--button-sea-blue);    
+    transition: 100ms linear;
+    cursor: pointer;
+
 }
 
 
@@ -94,8 +107,12 @@
 }
 
 .legalqcard-topic-content{
+    
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
-    align-items: center
-    ;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
 }

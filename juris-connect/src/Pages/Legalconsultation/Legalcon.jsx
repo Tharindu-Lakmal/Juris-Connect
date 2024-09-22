@@ -8,7 +8,6 @@ import Footer from '../../components/Footer/Footer';
 export default function Legalcon(){
     return(
     <div className='legalcon'>
-      <Navbar />
       <div className="content">
         <div className="left">
           <h1>Get the legal help <br/> you need</h1>
@@ -66,8 +65,6 @@ export default function Legalcon(){
         </form>
         
       </section>
-      
-            <Footer />
           
       
       

@@ -1,8 +1,8 @@
 
 .legalqcard-container {
     position: relative;
-    width: 90%;
-    margin: 0 auto;
+    width: 80%;
+    margin: 40px auto;
     gap: 20px;
 }
 
@@ -39,8 +39,8 @@
 }
 
 .legalqcard-qcard {
-    background-color: white;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 720px;
@@ -52,6 +52,8 @@
   .legalqcard-header {
     padding: 10px 10px 0;
     align-items: center;
+    background-color: white;
+    border-radius: 4px;
   }
   .qcard-info{
     display: flex;
