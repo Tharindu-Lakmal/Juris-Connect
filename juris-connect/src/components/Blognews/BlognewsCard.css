@@ -1,0 +1,111 @@
+
+.BlognewsCard {
+    width: 100%;
+}
+
+.BlognewsCard-container {
+    width: 90%;
+    margin: 40px auto 0;
+}
+
+.BlognewsCard-container h2 {
+    font-size: 22px;
+    line-height: 24px;
+}
+
+.BlognewsCard-cards {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+    margin-top: 50px;
+    gap: 20px;
+    row-gap: 18px;
+}
+
+.BlognewsCard-cards .card {
+    display: grid;
+    gap: 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    background-color: var(--bg-background-dark);
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 12px var(--box-shadow);
+}
+
+.BlognewsCard-cards .card-top {
+    position: relative;
+    display: grid;
+    gap: 15px;
+    overflow: hidden;
+}
+.BlognewsCard-details {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.BlognewsCard-cards .card .BlognewsCard-details h4 {
+    margin-bottom: 10px;
+}
+
+.BlognewsCard-cards p {
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: var(--text-color);
+    opacity: 0.6;
+}
+.BlognewsCard-details .BlognewsCard-writer {
+    font-size: 10px;
+    margin-top: 10px;
+    opacity: 0.4;
+}
+
+
+.BlognewsCard-img {
+    max-width: fit-content;
+    max-height: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+.BlognewsCard-img img {
+    width: 100%;
+}
+
+
+.BlognewsCard-container .seemore-btn {
+    margin: 120px auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BlognewsCard-container .seemore-btn button {
+    padding: 14px 18px;
+    border: none;
+    border-radius: 100px;
+    font-size: 14px;
+    color: var(--text-color);
+    background-color: var(--button-sea-blue);
+}
+.BlognewsCard-container .seemore-btn button:is(:hover, :focus-visible) {
+    color: var(--text-color);
+}
+
+
+/* Responsive Styles */
+
+@media only screen and (min-width: 540px) {
+    .BlognewsCard-container {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 1280px) {
+    .BlognewsCard {
+        max-width: 1680px;
+        margin: 0 auto;
+    }
+}
