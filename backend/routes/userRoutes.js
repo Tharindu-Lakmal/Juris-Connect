@@ -2,7 +2,7 @@ import express from "express"
 import { addUserDetails, listuser, loginUser, registerUser, removeUser } from "../controllers/UserControllerAPI.js"
 import multer from "multer" //create image storage system
 
-const userRouter = express.Router(); //using this create get, post, delete, update methods
+const userRouter = express.Router(); // define a router object | using this create get, post, delete, update methods
 
 // logic to save image in uploads folder
 const storage = multer.diskStorage({
