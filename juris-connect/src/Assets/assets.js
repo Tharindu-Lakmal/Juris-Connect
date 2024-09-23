@@ -15,7 +15,7 @@ import lawyer_12 from './lawyer_12.jpg'
 
 
 
-import header1 from './header1.jpeg'
+import header1 from './header1.webp'
 import qcard1 from './qcard1.jpg'
 import qcard2 from './qcard2.jpg'
 import qcard3 from './qcard3.jpg'
