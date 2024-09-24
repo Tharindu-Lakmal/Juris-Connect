@@ -19,11 +19,11 @@ const SubHeader = () => {
 
             <div className="btn-container">
               <button className="btn">
-                  <Link to='/lawyer_videos'>Explore Legal Guidance</Link>
+                <a href="http://localhost:3000" target='_blank'>Explore Legal Guidance</a>
               </button>
-              {/* <button className="btn">
+              {/*<button className="btn">
                   <Link to='/lawyer_videos'>View Lawyer Contents</Link>
-              </button> */}
+              </button>*/}
             </div>
           </div>
 
